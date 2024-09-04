@@ -1,0 +1,332 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #E8B86D;
+    color: #fff;
+    height: 60px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: cursive;
+    
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 1rem;
+    line-height: 50px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+#cart-button{
+    margin-left: 5px;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 10%;
+    width: 65px;
+    background-color: #E1D7B7;
+}
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    height: 75vh;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.offer img{
+    margin: 20px;
+    width: 98%;
+    
+}
+
+/* Product List*/
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 270px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card .price {
+    font-size: 16px;
+    color: #e60023;
+    margin: 10px 0;
+}
+
+.card .price del {
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.card .add-to-bag {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #e60023;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.card .add-to-bag:hover {
+    background-color: #bf001c;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #E8B86D;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer .address {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Cart Items */
+#cart-items {
+    margin-bottom: 20px;
+}
+
+#cart-items .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.payment-section {
+    margin-top: 20px;
+}
+
+.payment-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#payment-method {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#purchase-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#purchase-btn:hover {
+    background-color: #218838;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding-bottom: 5px;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #E8B86D;
+        width: 100%;
+        padding-left: 20px;
+        z-index: 1;
+    }
+
+    .navbar .nav-links li {
+        margin:  0;
+    }
+    .carousel-container {
+        margin: 10px;
+        height: 50vh;
+    }
+
+    .prev, .next {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .offer img {
+        width: 95%;
+        margin: 10px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
