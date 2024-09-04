@@ -66,6 +66,7 @@
 .carousel-slide img {
     width: 100%;
     display: block;
+    height: 80vh;
 }
 
 .carousel-slide {
@@ -311,9 +312,13 @@
     }
     .carousel-container {
         margin: 10px;
-        height: 50vh;
+        height: 20vh;
     }
-
+    .carousel-slide img {
+        width: 100%;
+        display: block;
+        height: 20vh;
+    }
     .prev, .next {
         font-size: 14px;
         padding: 12px;
